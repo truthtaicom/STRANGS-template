@@ -53,6 +53,7 @@ class MyDocument extends Document {
 
           <style type="text/css">{globalStyles}</style>
         </Head>
+
         <body>
           <Main />
           <NextScript />
