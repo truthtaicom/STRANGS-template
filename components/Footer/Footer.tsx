@@ -2,10 +2,11 @@ import React from 'react'
 import { Text } from '../ui-kits/Text'
 import { StyledFooter } from './Footer.styled'
 
-function Footer() {
+const Footer: React.FC = () => {
   return (
     <StyledFooter>
-      <Text>Footer</Text>
+      <Text>STRANGS Template © 2020</Text>
+      <Text>Made with ❤️ in Ho Chi Minh city</Text>
     </StyledFooter>
   )
 }

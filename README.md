@@ -1,11 +1,11 @@
 ## STRANGS Template with:
-✅ *S*torybook
-✅ *T*ypeScript
-✅ *R*eactJS
-✅ *A*pollo
-✅ *N*extJS
-✅ *G*raphQL
-✅ *S*tyledComponent
+- ✅ **S**torybook
+- ✅ **T**ypeScript
+- ✅ **R**eactJS
+- ✅ **A**pollo
+- ✅ **N**extJS
+- ✅ **G**raphQL
+- ✅ **S**tyledComponent
 
 ## Getting Started
 

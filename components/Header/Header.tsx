@@ -1,11 +1,26 @@
 import React from 'react'
 import { Text } from '../ui-kits/Text'
-import { StyledHeader } from './Header.styled'
+import {
+  StyledHeader,
+  StyledHeaderMenu,
+  StyledHeaderLogo,
+  StyledHeaderButton,
+  StyledHeaderMenuItem,
+} from './Header.styled'
 
 function Header() {
   return (
     <StyledHeader>
-      <Text>Header</Text>
+      <StyledHeaderLogo>LOGO</StyledHeaderLogo>
+      <StyledHeaderMenu>
+        <StyledHeaderMenuItem>
+          <Text>Home</Text>
+        </StyledHeaderMenuItem>
+        <StyledHeaderMenuItem>
+          <Text>Products</Text>
+        </StyledHeaderMenuItem>
+      </StyledHeaderMenu>
+      <StyledHeaderButton>Login</StyledHeaderButton>
     </StyledHeader>
   )
 }
