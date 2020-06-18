@@ -8,8 +8,6 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - './:/usr/src/app'
-      - '/usr/src/app/node_modules'
-      - '/usr/src/app/.next'
+      - ./:/usr/src/app
     env_file:
       - .env
