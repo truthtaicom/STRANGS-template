@@ -5,9 +5,9 @@
     "node": ">=10"
   },
   "scripts": {
-    "dev": "next dev",
+    "start": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start-prod": "next start",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "clean-files": "rm -rf ./template/public ./template/src && rm -rf ./template/.dockerignore ./template/.env  ./template/.eslintrc.js ./template/.gitignore ./template/.nvmrc ./template/.prettierignore ./template/.prettierrc.js ./template/docker-compose.yml ./template/Dockerfile ./template/next-env.d.ts ./template/next-env.d.ts ./template/.storybook ./template/README.md ./template/tsconfig.json",
