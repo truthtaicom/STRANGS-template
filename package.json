@@ -1,8 +1,8 @@
 {
   "name": "cra-template-strangs",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "scripts": {
     "start": "next dev",
