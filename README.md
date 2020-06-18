@@ -10,8 +10,18 @@
 
 ## Getting Started
 
-To run the server:
+### To run DEV Mode the server in local:
 
+```
+yarn OR npm install
+```
+
+```
+yarn dev OR npm run dev 
+```
+
+
+### To run DEV Mode the server in docker:
 1. Change Dockerfile
 ```bash
 ....
@@ -26,7 +36,6 @@ CMD "npm" "run" "dev"
 ```bash
 docker-compose up --build
 ```
-
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
