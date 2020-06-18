@@ -8,7 +8,7 @@ import {
   StyledHeaderMenuItem,
 } from './Header.styled'
 
-function Header() {
+const Header: React.FC = () => {
   return (
     <StyledHeader>
       <StyledHeaderLogo>LOGO</StyledHeaderLogo>

@@ -6,16 +6,27 @@
 - ✅ **N**extJS
 - ✅ **G**raphQL
 - ✅ **S**tyledComponent
+- ⭐️ DOCKER
 
 ## Getting Started
 
-First, run the development server:
+To run the server:
 
+1. Change Dockerfile
 ```bash
-npm run dev
-# or
-yarn dev
+....
+# For Dev mode: 
+#     CMD "yarn" "dev"
+# For Prod mode: 
+#     CMD "yarn" "start"
+CMD "npm" "run" "dev"
 ```
+
+2. Run command
+```bash
+docker-compose up --build
+```
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
