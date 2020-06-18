@@ -60,7 +60,7 @@
     }
   },
   "lint-staged": {
-    "./{component, pages}/*.{js,jsx,ts,tsx}": [
+    ".*.{js,jsx,ts,tsx}": [
       "prettier --write",
       "eslint src/*.js --fix-dry-run"
     ]
