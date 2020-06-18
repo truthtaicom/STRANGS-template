@@ -1,13 +1,63 @@
 {
-  "name": "strangs-template",
-  "version": "0.1.0",
-  "private": true,
+  "name": "cra-template-strangs",
+  "version": "0.4.0",
+  "engines": {
+    "node": ">=10"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "clean-files": "rm -rf ./template/public ./template/src && rm -rf ./template/.dockerignore ./template/.env  ./template/.eslintrc.js ./template/.gitignore ./template/.nvmrc ./template/.prettierignore ./template/.prettierrc.js ./template/docker-compose.yml ./template/Dockerfile ./template/next-env.d.ts ./template/next-env.d.ts ./template/.storybook ./template/README.md ./template/tsconfig.json",
+    "copy-files": "cp -a ./src/. template/src && cp -a ./public/. template/public && cp -a .storybook/. template/.storybook && cp .dockerignore .env .eslintrc.js .nvmrc tsconfig.json .prettierignore .prettierrc.js docker-compose.yml Dockerfile next-env.d.ts README.md template/ && cp .gitignore template/gitignore",
+    "prepublishOnly": "yarn clean-files && yarn copy-files"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/truthtaicom/STRANGS-template",
+    "directory": "/"
+  },
+  "bugs": {
+    "url": "https://github.com/truthtaicom/STRANGS-template/issues"
+  },
+  "main": "template.json",
+  "description": "A quick start NextJS App template with Storybook TypeScript ReactJS Apollo NextJS GraphQL StyledComponent",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "cra-template",
+    "template",
+    "styled-component",
+    "eslint",
+    "storybook",
+    "apollo",
+    "nextjs",
+    "graphql",
+    "typescript",
+    "prettier"
+  ],
+  "files": [
+    "template",
+    "template.json"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "latest",
+    "access": "public"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "dependencies": {
     "@apollo/client": "^3.0.0-rc.5",
@@ -32,7 +82,7 @@
     "@storybook/react": "^5.3.19",
     "@types/jest": "^26.0.0",
     "@types/node": "^14.0.13",
-    "@types/react": "^16.9.37",
+    "@types/react": "^16.9.38",
     "@typescript-eslint/eslint-plugin": "^3.3.0",
     "@typescript-eslint/parser": "^3.3.0",
     "awesome-typescript-loader": "^5.2.1",
@@ -59,8 +109,9 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "prettier --write",
-      "eslint --fix-dry-run"
+      "eslint ./src/** --fix-dry-run",
+      "prettier  ./src/** --write",
+      "git add ."
     ]
   }
 }
