@@ -1,6 +1,6 @@
 {
   "name": "cra-template-strangs",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "engines": {
     "node": ">=12"
   },
@@ -108,9 +108,9 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
+    "./src/**/*.tsx": [
       "eslint ./src/** --fix-dry-run",
-      "prettier  ./src/** --write",
+      "prettier ./src/** --write",
       "git add ."
     ]
   }

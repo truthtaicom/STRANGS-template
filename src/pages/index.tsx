@@ -11,12 +11,13 @@ import { Footer } from '../components/Footer'
 import { Card } from '../components/ui-kits/Card'
 
 export const HomeContainer = styled.div``
+
 export const StyledHomeBody = styled.div`
   display: grid;
+  justify-content: center;
   position: relative;
   grid-template-columns: repeat(auto-fill, 220px);
   grid-gap: 10px;
-  justify-content: center;
 `
 
 function Home() {

@@ -10,6 +10,11 @@
 
 ## Getting Started
 
+### How to install
+```
+npx create-react-app <your-project-name> --template strangs
+```
+
 ### To run DEV Mode the server in local:
 
 ```

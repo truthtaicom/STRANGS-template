@@ -3,7 +3,7 @@ import { StyledCard, StyledCardImage, StyledCardBody, StyledCardButtonGroup } fr
 
 interface CardProps {
   children: React.ReactNode
-  onClick?(e: React.MouseEvent<HTMLElement>): void
+  onClick?(e: any): void
   buttonGroups?: React.ReactNode
   imageURL: string
 }

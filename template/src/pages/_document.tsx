@@ -14,7 +14,6 @@ const globalStyles = `
 }
 `
 
-
 class MyDocument extends Document {
   static async getInitialProps(ctx: any): Promise<any> {
     const sheet = new ServerStyleSheet()
@@ -48,8 +47,8 @@ class MyDocument extends Document {
           <meta charSet="utf-8" />
 
           <link
-            rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            rel="stylesheet"
           />
 
           <style type="text/css">{globalStyles}</style>

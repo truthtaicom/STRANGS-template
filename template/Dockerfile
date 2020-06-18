@@ -20,5 +20,5 @@ EXPOSE 3000
 # For Dev mode: 
 #     CMD "yarn" "dev"
 # For Prod mode: 
-#     CMD "yarn" "start"
-CMD "yarn" "start"
+#     CMD "yarn" "start-prod"
+CMD "yarn" "start-prod"
